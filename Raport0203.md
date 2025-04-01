@@ -30,7 +30,7 @@ Skontaktowaliśmy się z IMGW z prośbą o udostępnienie danych z modeli o kró
 
 - [Methods to improve run time of hydrologic models: opportunities and challenges in the machine learning era](https://arxiv.org/pdf/2408.02242)
   - Artykuł opisuje trudności na jakie można się napotkać w przypadku wykorzystania uczenia maszynowego do modelowania hydrologicznego.
-  - Jest to średniej jakości artykuł przeglądowy, który może jednak zrobił już wstępny przegląd literatury, dzięki czemu przeglądając cytowania oraz cytowania cytowań można znaleźć inne ciekawe publikacje takie jak:
+  - Jest to średniej jakości artykuł przeglądowy, który jednak zrobił już wstępny przegląd literatury, dzięki czemu przeglądając cytowania oraz cytowania cytowań można znaleźć inne ciekawe publikacje takie jak:
     - [Towards Learning Universal, Regional, and Local Hydrological
 Behaviors via Machine-Learning Applied to Large-Sample Datasets](https://arxiv.org/pdf/1907.08456) - Porównanie różnych modeli głębokich sieci neuronowych do prognozowania opadów
     - [An extensive evaluation of seven machine learning methods for
