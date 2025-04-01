@@ -28,6 +28,19 @@ Skontaktowaliśmy się z IMGW z prośbą o udostępnienie danych z modeli o kró
     - Dynamic Time Warping
   - Każda z tych miar określa czy wymodelowany wynikowy szereg czasowy jest dobrze zgeneralizowany
 
+- [Methods to improve run time of hydrologic models: opportunities and challenges in the machine learning era](https://arxiv.org/pdf/2408.02242)
+  - Artykuł opisuje trudności na jakie można się napotkać w przypadku wykorzystania uczenia maszynowego do modelowania hydrologicznego.
+  - Jest to średniej jakości artykuł przeglądowy, który może jednak zrobił już wstępny przegląd literatury, dzięki czemu przeglądając cytowania oraz cytowania cytowań można znaleźć inne ciekawe publikacje takie jak:
+    - [Towards Learning Universal, Regional, and Local Hydrological
+Behaviors via Machine-Learning Applied to Large-Sample Datasets](https://arxiv.org/pdf/1907.08456) - Porównanie różnych modeli głębokich sieci neuronowych do prognozowania opadów
+    - [An extensive evaluation of seven machine learning methods for
+rainfall prediction in weather derivatives](https://www.kampouridis.net/papers/ESWA2017-AcceptedManuscript.pdf) - Porównanie różnych modeli uczenia maszynowego do prognozowania opadów. Benchmark niestety wykorzystuje dane dzienne, w związku z powyższym odbiega on trochę od częśtotliwości oczekiwanej przez ten projekt. Jednocześnie wskazuje to, że ten projekt w celuje w dosyć niezbadaną dziedzinę, ponieważ deszcze krótkoterminowe są zdecydowanie bardziej zmienne i nieprzewidywalne niż opady na przestrzeni całego dnia.
+    
 
 
 # Dane z deszczomierzy
+
+IMGW udostępnia dane z deszczomierzy w formacie CSV. W tym przypadku mamy do dyspozycji dane od 1951 do 2023 roku włącznie. Problematyczna jest dokładność tych pomiarów, ponieważ są to dane co najwyżej dzienne. Dane możemy znaleźć na stronie [danepubliczne.imgw.pl](https://danepubliczne.imgw.pl/data/dane_pomiarowo_obserwacyjne/dane_hydrologiczne/dobowe/)
+
+Drugim źródłem danych są dane jest **Polski Atlas Natężeń Deszczów (PANDa)** -> [link](https://atlaspanda.pl/#). Na stronie jest wspomniane, że podstawą dla platformy są dane opadowe z trzech dekad przy użyciu 100 deszczomierzy, to niestety nie widać aby były one ogólno dostępne. Po zalogowaniu na ich platformę, można zapłacić za dostęp do predykcji, lecz i tam danych również brak. Na stronie internetowej uwzględniają oni współpracę z uczelniami przez specjalny formularz kontaktowy. Możliwe, że udałoby się uzyskać dostęp do tych danych w ramach współpracy z uczelnią. Aktualnie jesteśmy na etapie oczekiwania na odpowiedź.
+
