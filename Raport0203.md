@@ -41,7 +41,7 @@ rainfall prediction in weather derivatives](https://www.kampouridis.net/papers/E
 # Dane z deszczomierzy
 
 IMGW udostępnia dane z deszczomierzy w formacie CSV. W tym przypadku mamy do dyspozycji dane od 1951 do 2023 roku włącznie. Problematyczna jest dokładność tych pomiarów, ponieważ są to dane co najwyżej dzienne. Dane możemy znaleźć na stronie [danepubliczne.imgw.pl](https://danepubliczne.imgw.pl/data/dane_pomiarowo_obserwacyjne/dane_hydrologiczne/dobowe/)
-- **Aktualizacja**: Po wymianie mailowej dostaliśmy informację, że udostępniają oni dane co 10 minut.
+- **Aktualizacja**: Po wymianie mailowej dostaliśmy informację, że udostępniają oni dane co 10 minut: [link](https://danepubliczne.imgw.pl/pl/datastore?product=Hydro).
 
 Drugim źródłem danych są dane jest **Polski Atlas Natężeń Deszczów (PANDa)** -> [link](https://atlaspanda.pl/#). Na stronie jest wspomniane, że podstawą dla platformy są dane opadowe z trzech dekad przy użyciu 100 deszczomierzy, to niestety nie widać aby były one ogólno dostępne. Po zalogowaniu na ich platformę, można zapłacić za dostęp do predykcji, lecz i tam danych również brak. Na stronie internetowej uwzględniają oni współpracę z uczelniami przez specjalny formularz kontaktowy. Możliwe, że udałoby się uzyskać dostęp do tych danych w ramach współpracy z uczelnią. Aktualnie jesteśmy na etapie oczekiwania na odpowiedź. 
 - **Aktualizacja**: odmówili udostępnienia danych.
