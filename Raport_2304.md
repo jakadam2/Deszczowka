@@ -8,19 +8,30 @@
 1. **Pozyskanie danych**
    1. Dane z prognozy pogody
       1. Modele ALARO, AROME co 6h  
-      2. ```Opcjonalnie``` Modele MERGE, co 10min
+      2. **Opcjonalnie** - Modele MERGE, co 10min
       3. Sparsowanie i standaryzacja 
    2. Dane z deszczomierzy
-      1. ```[TBA]```
+      1. Dane z IMGW co 10min
+      2. Sparsowanie i standaryzacja
 2. **Konstrukcja oraz trening modeli**
-   1. Regresja liniowa - baseline
-   2. Model wykorzystujący konwolucję 
-   3. ```Opcjonalnie``` Model wykorzystujące szeregi czasowe
-3. **Ewaluacja wyników**
-   1. Ewaluacja wyników na innym wycinku czasu (np. na danych od stycznie do marca trenujemy, od marca do lipca testujemy)
-   2. Ewaluacja wyników na podstawie wybranego podziału (np. 30% według wybranego rozkładu będzie stanowić zbiór testowy)
-   3. Ewaluacja na co n-tym pomiarze (konkretny przypadek punkty wyżej, co n-ty pomiar trafia deterministycznie do zbioru testowego)
-   4. ```Opcjonalnie``` Zaproponowanie innego sposobu ewaluacji
-4. **Stworzenie pipelinu/frameworku pozwalającego zbudować model dla innych danych**
+   - Wybór modelu
+      1. Regresja liniowa - baseline
+      2. Drzewa decyzyjne takie jak `XGBoost`, `CatBoost`, `LightGBM`
+      3. Sieci neuronowe
+         1. `MLPRegressor`
+         2. `Conv2D`
+         3. `LSTM`
+         4. **Opcjonalnie** - Bardziej zaawansowane architektury
+      4. **Opcjonalnie** - Zaawansowane modele takie jak `Moment`, `ARIMA`, `ETS`
+   - Trening modelu
+      1. Podział na zbiór treningowy i testowy zgodnie z metodykami stosowanymi w uczeniu maszynowym na szeregach czasowych
+      2. Optymalizacja hiperparametrów dla każdego z modeli
+      3. Ewaluacja wyników
+         1. Wybór metryki ewaluacji
+         2. Porównanie wyników dla różnych modeli
+         3. **Opcjonalnie** - Porównanie wyników dla różnych deszczomierzy
+      4. **Opcjonalnie** - Transfer learning pomiędzy deszczomierzami
+3. **Stworzenie pipelinu/frameworku/biblioteki pozwalającego na ewaluację modeli dla standaryzacji badań**
    1. Stworzenie pipelinu
-   2. ```Opcjonalnie``` Stworzenie frameworku
+   2. Integracja z `MLFlow` lub `WandB`
+   3. **Opcjonalnie** - Stworzenie frameworku
