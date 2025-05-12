@@ -24,6 +24,7 @@ class FlexModel(ABC):
         model = self._create_model(dataset)
         for epoch in range(epochs):
             self._train_one_epoch(model, dataset)
+        return model
 
     @classmethod
     def from_yaml(cls, path: str, logger=None):
