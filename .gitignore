@@ -1,0 +1,10 @@
+.vscode/
+profile_default/
+ipython_config.py
+.ipynb_checkpoints
+__pycache__/
+wandb/
+src/udometer_predictor.egg-info/
+*.csv
+*.pdf
+data/
