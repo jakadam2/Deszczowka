@@ -8,6 +8,7 @@ import optuna
 class ConfigHandler:
     var_type: str
     var_values: list[Any] | tuple[Any, Any]
+    var_log: bool = False
 
 
 @dataclass
@@ -24,7 +25,10 @@ class Config:
             if val.var_type == "int":
                 suggestions[f.name] = trial.suggest_int(f.name, val.var_values[0], val.var_values[1])
             if val.var_type == "float":
-                suggestions[f.name] = trial.suggest_float(f.name, val.var_values[0], val.var_values[1])
+                if val.var_log:
+                    suggestions[f.name] = trial.suggest_loguniform(f.name, val.var_values[0], val.var_values[1], log=True)
+                else:
+                    suggestions[f.name] = trial.suggest_uniform(f.name, val.var_values[0], val.var_values[1])
 
         return suggestions
 

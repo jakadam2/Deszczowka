@@ -28,7 +28,7 @@ if __name__ == "__main__":
     grib_dir = Path("/home/rusiek/Studia/viii_sem/Deszczowka/imgw")
     csv_file = Path("/home/rusiek/Studia/viii_sem/Deszczowka/tmp.csv")
 
-    converter = IMGWProcessor(grib_dir, csv_file, id=249170080)
+    converter = IMGWProcessor(grib_dir, csv_file, id=353140200)
     converter.process()
 
     tmp_df = pd.read_csv(csv_file)
